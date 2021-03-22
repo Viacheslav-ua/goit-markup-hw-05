@@ -336,9 +336,6 @@ body {
 
 .hero-button:hover {
   background-color: var(--accent-hover);
-}
-
-.hero-button:hover {
   cursor: pointer;
 }
 
@@ -346,7 +343,7 @@ body {
   --grid-item: 4;
 }
 
-.features-item::before {
+/* .features-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -370,9 +367,15 @@ body {
 
 .features-item:nth-child(4)::before {
   background-image: url(../images/icon/astronaut.svg);
-}
+} */
 
-.features-title {
+.fiatures-blok-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bgc);
 }
 
 .features-item-title {
