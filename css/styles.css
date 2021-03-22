@@ -105,9 +105,13 @@ body {
 /* global-header ------------------------------------------*/
 .page-header {
   display: flex;
-  padding: 20px 0;
-  height: 80px;
+  /* padding: 20px 0; */
+  /* height: 80px; */
   border-bottom: 1px solid #ececec;
+}
+
+.nav {
+  /* height: 80px; */
 }
 
 .page-header .container {
@@ -122,7 +126,9 @@ body {
 
 .site-nav {
   display: flex;
+  align-items: center;
   margin-left: 93px;
+  height: 80px;
 }
 
 .nav-link {
@@ -133,6 +139,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -145,7 +155,25 @@ body {
 }
 
 .current {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: var(--accent);
+  height: 100%;
+}
+
+.current::after {
+  content: '';
+  margin-top: 1px;
+  height: 4px;
+  border: solid 2px var(--accent);
+  border-radius: 2px;
+}
+
+.current::before {
+  content: '';
+  height: 4px;
+  /* border: solid 2px var(--accent); */
 }
 
 .address {
@@ -166,6 +194,10 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -185,6 +217,10 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .smartphone-icon {
@@ -192,6 +228,10 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* global-footer -----------------------------------------*/
@@ -213,6 +253,10 @@ body {
 .contacts-adr {
   line-height: 1.71;
   color: white;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-adr:hover,
@@ -223,12 +267,16 @@ body {
 .contacts-link {
   line-height: 1.71;
   color: var(--half-tone);
+  margin-top: 9px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent);
-  margin-top: 9px;
 }
 
 .social {
@@ -264,6 +312,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-net {
@@ -332,6 +384,10 @@ body {
   background: var(--accent);
   border-radius: 4px;
   border: none;
+
+  transition-property: background-color, cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -342,32 +398,6 @@ body {
 .features-item {
   --grid-item: 4;
 }
-
-/* .features-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bgc);
-}
-
-.features-item:nth-child(1)::before {
-  background-image: url(../images/icon/antenna.svg);
-}
-
-.features-item:nth-child(2)::before {
-  background-image: url(../images/icon/clock.svg);
-}
-
-.features-item:nth-child(3)::before {
-  background-image: url(../images/icon/diagram.svg);
-}
-
-.features-item:nth-child(4)::before {
-  background-image: url(../images/icon/astronaut.svg);
-} */
 
 .fiatures-blok-icon {
   display: flex;
@@ -448,6 +478,10 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
@@ -462,6 +496,10 @@ body {
 
 .soc-icon {
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------clients------------- */
@@ -478,15 +516,24 @@ body {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 3px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon {
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover {
-  border: 1px solid var(--accent);
-  border-radius: 3px;
+  /* border: 1px solid var(--accent); */
+  /* border-radius: 3px; */
+  border-color: var(--accent);
 }
 
 .client-link:hover .client-icon {
@@ -511,7 +558,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--basic-text);
   margin-bottom: 4px;
-  
 }
 
 .project-caption {
@@ -525,13 +571,14 @@ body {
   display: block;
   padding-bottom: 20px;
 
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
-.project-link:focus{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-   0px 4px 4px rgba(0, 0, 0, 0.06),
-   1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*------------- buttons */
@@ -552,6 +599,10 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   margin-right: 8px;
+
+  transition-property: background-color, cursor, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons-item:last-child button {
@@ -564,16 +615,9 @@ body {
 } */
 
 .buttons:hover,
-.buttons:focus{
-  cursor: pointer;
-  background: var(--accent);
-  color: white;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 .buttons:focus {
-  background: var(--accent);
+  cursor: pointer;
+  background-color: var(--accent);
   color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
