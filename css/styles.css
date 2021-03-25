@@ -658,7 +658,6 @@ body {
 
 .project-overlay {
   position: absolute;
-  top: 294px;
   height: 294px;
   display: flex;
   align-items: center;
@@ -670,13 +669,13 @@ body {
   line-height: 1.6;
   color: white;
 
-  transition-property: top;
-  transition-duration: 300ms;
+  transition-property: transform;
+  transition-duration: 400ms;
   transition-timing-function: linear;
 }
 
 .show-overlay:hover .project-overlay {
-  top: 0;
+  transform: translateY(-100%);
 }
 
 .project-text {
