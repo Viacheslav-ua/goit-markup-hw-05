@@ -12,6 +12,7 @@
   --shadow: rgba(0, 0, 0, 0.15);
 
   --grid-item: 1;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 h1,
@@ -142,7 +143,7 @@ body {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .nav-link:hover,
@@ -194,7 +195,7 @@ body {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .address-link:hover,
@@ -217,7 +218,7 @@ body {
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .smartphone-icon {
@@ -228,7 +229,7 @@ body {
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 /* global-footer -----------------------------------------*/
@@ -253,7 +254,7 @@ body {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .contacts-adr:hover,
@@ -268,7 +269,7 @@ body {
 
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .contacts-link:hover,
@@ -312,7 +313,7 @@ body {
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .soc-net {
@@ -384,7 +385,7 @@ body {
 
   transition-property: background-color, cursor;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .hero-button:hover {
@@ -464,7 +465,7 @@ body {
 
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .close-link:hover {
@@ -585,7 +586,7 @@ body {
 
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .soc-link:hover,
@@ -603,7 +604,7 @@ body {
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 /* --------------clients------------- */
@@ -623,7 +624,7 @@ body {
 
   transition-property: border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .client-icon {
@@ -631,7 +632,7 @@ body {
 
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .client-link:hover {
@@ -705,7 +706,7 @@ body {
 
   transition-property: box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .project-link:hover,
@@ -734,7 +735,7 @@ body {
 
   transition-property: background-color, cursor, color, box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--timing-function);
 }
 
 .buttons-item:last-child button {
